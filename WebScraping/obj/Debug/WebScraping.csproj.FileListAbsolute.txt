@@ -1,0 +1,16 @@
+C:\Git\WebScraping\WebScraping\WebScraping\bin\Debug\WebScraping.exe.config
+C:\Git\WebScraping\WebScraping\WebScraping\bin\Debug\WebScraping.exe
+C:\Git\WebScraping\WebScraping\WebScraping\bin\Debug\WebScraping.pdb
+C:\Git\WebScraping\WebScraping\WebScraping\obj\Debug\WebScraping.csprojResolveAssemblyReference.cache
+C:\Git\WebScraping\WebScraping\WebScraping\obj\Debug\WebScraping.Properties.Resources.resources
+C:\Git\WebScraping\WebScraping\WebScraping\obj\Debug\WebScraping.csproj.GenerateResource.Cache
+C:\Git\WebScraping\WebScraping\WebScraping\obj\Debug\WebScraping.exe
+C:\Git\WebScraping\WebScraping\WebScraping\obj\Debug\WebScraping.pdb
+C:\Git\WebScraping\WebScraping\WebScraping\bin\Debug\SgmlReaderDll.dll
+C:\Git\WebScraping\WebScraping\WebScraping\obj\Debug\WebScraping.Form1.resources
+C:\Git\PointSiteOrbiter\WebScraping\bin\Debug\WebScraping.exe.config
+C:\Git\PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.exe
+C:\Git\PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.pdb
+C:\Git\_PointSiteOrbiter\WebScraping\bin\Debug\WebScraping.exe.config
+C:\Git\_PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.exe
+C:\Git\_PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.pdb
