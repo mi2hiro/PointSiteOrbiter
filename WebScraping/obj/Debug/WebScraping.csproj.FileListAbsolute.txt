@@ -24,3 +24,10 @@ C:\Git_Local\PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.csprojResolveAss
 C:\Git_Local\PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.Form1.resources
 C:\Git_Local\PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.Properties.Resources.resources
 C:\Git_Local\PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.csproj.GenerateResource.Cache
+C:\git\PointSiteOrbiter\WebScraping\bin\Debug\WebScraping.exe
+C:\git\PointSiteOrbiter\WebScraping\bin\Debug\WebScraping.pdb
+C:\git\PointSiteOrbiter\WebScraping\bin\Debug\SgmlReaderDll.dll
+C:\git\PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.csprojResolveAssemblyReference.cache
+C:\git\PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.Form1.resources
+C:\git\PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.Properties.Resources.resources
+C:\git\PointSiteOrbiter\WebScraping\obj\Debug\WebScraping.csproj.GenerateResource.Cache

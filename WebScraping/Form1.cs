@@ -19,14 +19,21 @@ namespace WebScraping
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            GetScraping("http://hapitas.jp/");
+            var url = textBox1.Text;
+
+            url = "http://hapitas.jp/";
+
+            webBrowser1.Navigate(url);
+
+
+            //GetScraping("http://hapitas.jp/");
             //GetScraping("http://www.xbox.com/ja-JP/games/calendar/xbox360");
         }
-
 
         static XDocument ParseHtml(TextReader reader)
         {
@@ -66,6 +73,27 @@ namespace WebScraping
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var bbb = webBrowser1.Document.Body.InnerHtml;
+            var ccc = webBrowser1.DocumentText;
+            var ddd = webBrowser1.DocumentStream;
+
+            using (var sr = new StreamReader(bbb, Encoding.UTF8))
+            {
+                var xml = ParseHtml(sr);
+
+                var fuga = xml.Descendants("div").ToList().Where(x => x.FirstAttribute.ToString().Contains("clickget"));
+
+            }
 
         }
     
