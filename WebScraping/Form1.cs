@@ -24,7 +24,7 @@ namespace WebScraping
         private void button1_Click(object sender, EventArgs e)
         {
             GetScraping("http://hapitas.jp/");
-            //GetScraping("http://www.xbox.com/ja-JP/games/calendar/xboxone?xr=shellnav");
+            //GetScraping("http://www.xbox.com/ja-JP/games/calendar/xbox360");
         }
 
 
@@ -45,25 +45,28 @@ namespace WebScraping
                 xml = XDocument.Load(sgml); // たった3行でHtml to Xml
             }
 
-            var ns = xml.Root.Name.Namespace;
 
-            var fuga = xml.Element("div");
-            fuga = xml.Element("html");
-            fuga = xml.Element("html").Element("body");
-            fuga = xml.Element("html").Element("body").Element("div");
+            var fuga = xml.Descendants("div").ToList().Where(x => x.FirstAttribute.ToString().Contains("clickget"));
+            var piko = xml.Descendants("div").ToList().Where(x => x.FirstAttribute.ToString().Contains("clickget"));
 
-            var query = xml.Descendants(ns + "table")
-                .Last()
-                .Descendants(ns + "tr")
-                .Skip(1) // テーブル一行目は項目説明なので飛ばす
-                .Select(e => e.Elements(ns + "td").ToList())
-                .Select(es => new
-                {
-                    Title = es.First().Value,
-                    ReleaseDate = es.Last().Value
-                });
+            var aaa = "";
 
-            var hoge="";
+            //var query = xml.Descendants(ns + "table")
+            //    .Last()
+            //    .Descendants(ns + "tr")
+            //    .Skip(1) // テーブル一行目は項目説明なので飛ばす
+            //    .Select(e => e.Elements(ns + "td").ToList())
+            //    .Select(es => new
+            //    {
+            //        Title = es.First().Value,
+            //        ReleaseDate = es.Last().Value
+            //    });
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     
     }
