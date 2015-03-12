@@ -1,37 +1,38 @@
-Thumbs.db
-*.obj
-*.pdb
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+#Visual Studio files
+*.[Oo]bj
 *.user
 *.aps
 *.pch
 *.vspscc
+*.vssscc
 *_i.c
 *_p.c
 *.ncb
 *.suo
-*.sln.docstates
 *.tlb
 *.tlh
 *.bak
-*.cache
+*.[Cc]ache
 *.ilk
 *.log
-[Bb]in
 *.lib
 *.sbr
-*.orig
+*.sdf
+ipch/
 obj/
-*.vssscc
-$tf*/
-packages/*
-!packages/repositories.config
-*/FakesAssemblies/*
-/*.vsp
-/*.psess
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+Ankh.NoLoad
 
-error-*.xml
-*.js.map
-*.js
+#Tooling
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*
 
-*.exe
-*.cache
+#Project files
+[Bb]uild/
