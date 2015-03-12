@@ -39,7 +39,7 @@ namespace WebScraping
         {
             using (var sgmlReader = new SgmlReader { DocType = "HTML", CaseFolding = CaseFolding.ToLower })
             {
-                sgmlReader.InputStream = reader; // ↑の初期化子にくっつけても構いません
+                sgmlReader.InputStream = reader;
                 return XDocument.Load(sgmlReader);
             }
         }
@@ -83,11 +83,11 @@ namespace WebScraping
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var bbb = webBrowser1.Document.Body.InnerHtml;
-            var ccc = webBrowser1.DocumentText;
-            var ddd = webBrowser1.DocumentStream;
+            var element = webBrowser1.Document.GetElementById("clickget_list").InnerHtml;
+            var element2 = webBrowser1.Document.GetElementById("clickget_list");
+            var element3 = webBrowser1.DocumentStream;
 
-            using (var sr = new StreamReader(bbb, Encoding.UTF8))
+            using (var sr = new StreamReader(element3, Encoding.UTF8))
             {
                 var xml = ParseHtml(sr);
 
@@ -95,6 +95,21 @@ namespace WebScraping
 
             }
 
+        }
+
+        private void getHTML()
+        {
+            using (var stream = new WebClient().OpenRead("http://www.bing.com/search?cc=jp&q=linq"))
+            using (var sr = new StreamReader(stream, Encoding.UTF8))
+            {
+                var xml = ParseHtml(sr); // これだけでHtml to Xml完了。あとはLinq to Xmlで操作。
+
+                XNamespace ns = "http://www.w3.org/1999/xhtml";
+                foreach (var item in xml.Descendants(ns + "h3"))
+                {
+                    Console.WriteLine(item.Value); // bingでlinqを検索した結果のタイトルを列挙
+                }
+            }
         }
     
     }
