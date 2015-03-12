@@ -87,7 +87,7 @@ namespace WebScraping
             var element2 = webBrowser1.Document.GetElementById("clickget_list");
             var element3 = webBrowser1.DocumentStream;
 
-            aaa
+            aaabbb
 
             using (var sr = new StreamReader(element3, Encoding.UTF8))
             {

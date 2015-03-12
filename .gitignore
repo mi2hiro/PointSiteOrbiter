@@ -32,3 +32,6 @@ packages/*
 error-*.xml
 *.js.map
 *.js
+
+*.exe
+*.cache
