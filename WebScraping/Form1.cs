@@ -29,7 +29,7 @@ namespace WebScraping
             url = "http://hapitas.jp/";
 
             webBrowser1.Navigate(url);
-
+             
 
             //GetScraping("http://hapitas.jp/");
             //GetScraping("http://www.xbox.com/ja-JP/games/calendar/xbox360");
